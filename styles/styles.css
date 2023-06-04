@@ -18,9 +18,41 @@
     --font-w400-s32: 32px;
     --font-w400-s24: 24px;
     --font-w400-s16: 16px;
+
+    --height-nav: 77px;
 }
 
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    min-height: 100vh;
+}
+
+.header__nav {
+    height: var(--height-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__main {
+    height: calc(100vh - var(--height-nav));
 }
