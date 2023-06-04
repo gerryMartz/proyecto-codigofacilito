@@ -11,15 +11,19 @@
     --color-secundario-3: #D7967C;
     --color-secundario-4: #F2DCD4;
 
+    --color-background-bebidas: #F2DCD4;
+
     --font-w500: 500;
     --font-w400: 400;
 
-    --font-w500-s46: 46px;
-    --font-w400-s32: 32px;
-    --font-w400-s24: 24px;
-    --font-w400-s16: 16px;
+    --font-s46: 46px;
+    --font-s32: 32px;
+    --font-s24: 24px;
+    --font-s16: 16px;
 
     --height-nav: 77px;
+    --padding-top: 50px;
+    --padding-bottom: 40px;
 }
 
 html {
@@ -33,17 +37,33 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.togo__link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
     overflow: hidden;
 }
 
+/* Sección del header */
+
 .header {
     min-height: 100vh;
+    --padding-top: 0;
+    --padding-bottom: 0;
 }
 
 .header__nav {
@@ -53,6 +73,78 @@ html {
     align-items: center;
 }
 
+.header__title {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s24);
+    color: var(--color-principal-1);
+}
+
+.header__links {
+    display: flex;
+    gap: 24px;
+}
+
+.header__link {
+    font-weight: var(--font-w400);
+    font-size: var(--font-s16);
+    color: var(--color-principal-1);
+    text-decoration-line: none;
+}
+
 .header__main {
     height: calc(100vh - var(--height-nav));
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
+
+.header__main::after {
+    content: "";
+    background-image: url(../assets/hero-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.header__name {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    background-color: var(--color-secundario-1);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 365px;
+    height: 80px;
+    place-self: center;
+}
+
+.header__shop {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s46);
+    color: white;
+}
+
+/* Sección de las bebidas */
+
+.bebidas {
+    min-height: 500px;
+    background-color: var(--color-background-bebidas);
+}
+
+.bebidas__title {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s46);
+    color: var(--color-principal-1);
+    text-align: center;
+}
+
+.bebidas__tipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Aquí continua el proyecto... */
