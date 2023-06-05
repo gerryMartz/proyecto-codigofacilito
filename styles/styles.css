@@ -11,6 +11,8 @@
     --color-secundario-3: #D7967C;
     --color-secundario-4: #F2DCD4;
 
+    --color-price: #2C2B2B;
+
     --color-background-bebidas: #F2DCD4;
 
     --font-w500: 500;
@@ -135,6 +137,10 @@ html {
     background-color: var(--color-background-bebidas);
 }
 
+.bebidas__container {
+    overflow: visible;
+}
+
 .bebidas__title {
     font-weight: var(--font-w500);
     font-size: var(--font-s46);
@@ -145,19 +151,44 @@ html {
 .bebidas__tipos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding-top: 47px;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.bebidas__card {
+    transform: scale(1);
+    transition: all 200ms ease-in 0s;
+}
+
+.bebidas__card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 6px;
+    transform: scale(1.02);
 }
 
 .bebidas__img {
     display: block;
-    width: 200px;
-    height: 210px;
+    width: 100%;
+    height: 205px;
     object-fit: cover;
     border-radius: 6px;
 }
 
 .bebidas__info {
-    margin-top: 2rem;
+    margin-top: 25px;
+}
+
+.bebida__title {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-principal-3);
+}
+
+.bebidas__precio {
+    margin-top: 16px;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-price);
 }
 
 /* Aquí continua el proyecto... */
