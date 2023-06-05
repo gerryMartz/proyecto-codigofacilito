@@ -69,6 +69,7 @@ html {
 .header__nav {
     height: var(--height-nav);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -131,7 +132,6 @@ html {
 /* Sección de las bebidas */
 
 .bebidas {
-    min-height: 500px;
     background-color: var(--color-background-bebidas);
 }
 
@@ -145,6 +145,19 @@ html {
 .bebidas__tipos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-top: 47px;
+}
+
+.bebidas__img {
+    display: block;
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.bebidas__info {
+    margin-top: 2rem;
 }
 
 /* Aquí continua el proyecto... */
