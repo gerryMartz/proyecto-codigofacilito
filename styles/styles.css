@@ -298,3 +298,28 @@ html {
 
 /* Sección de granos de café */
 
+.granos__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
+    padding-top: var(--padding-top-contenedor-productos);
+}
+
+.granos__figure {
+    width: 270px;
+}
+
+.granos__img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.granos__tipo {
+    margin-top: 1rem;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-principal-3);
+}
