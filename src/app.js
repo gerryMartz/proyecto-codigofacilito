@@ -11,8 +11,7 @@ launchButton.addEventListener("click", () => {
 
     dialogTitle.innerText = `¡Gracias por tu mensaje, ${nombre}!`;
     dialogParagraph.innerText = `Tu mensaje fue enviado exitosamente.`;
-    dialogParagraph.innerHTML += `<br>
-                                <b>"${mensaje}"</b>`;
+    dialogParagraph.innerHTML += `<br><b>"${mensaje}"</b>`;
 
     dialogElement.showModal();
 });

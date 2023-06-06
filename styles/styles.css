@@ -49,8 +49,8 @@ html {
 
 .togo__link {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,4 +461,33 @@ html {
         background-color: rgba(40, 65, 72, 0.7);
     }
 
+}
+
+/* Sección del footer */
+
+.footer {
+    background-color: var(--color-principal-1);
+    color: white;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.footer__texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    color: white;
+    text-decoration-line: none;
+    font-weight: var(--font-w400);
+    font-size: var(--font-s16);
+}
+
+.footer__email {
+    text-align: right;
+    align-self: center;
 }
