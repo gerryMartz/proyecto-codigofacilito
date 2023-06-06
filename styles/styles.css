@@ -534,5 +534,9 @@ html {
     .footer__email {
         text-align: center;
     }
+
+    .dialog__title {
+        font-size: var(--font-s16);
+    }
     
 }
