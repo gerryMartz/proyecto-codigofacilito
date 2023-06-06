@@ -14,21 +14,21 @@
         <header class="header">
             <nav class="header__nav container">
                 <figure class="header__logo">
-                    <figcaption class="header__title">Cafetería</figcaption>
+                    <figcaption class="header__title">FizzBuzz Coffee</figcaption>
                 </figure>
 
                 <menu class="header__links">
                     <a href="#bebidas" class="header__link">Bebidas</a>
-                    <a href="#" class="header__link">Desayunos</a>
-                    <a href="#" class="header__link">Platillos</a>
-                    <a href="#" class="header__link">Café en grano</a>
-                    <a href="#" class="header__link">Contacto</a>
+                    <a href="#desayunos" class="header__link">Desayunos</a>
+                    <a href="#platillos" class="header__link">Platillos</a>
+                    <a href="#cafe" class="header__link">Café en grano</a>
+                    <a href="#contacto" class="header__link">Contacto</a>
                 </menu>
             </nav>
 
             <section class="header__main">
                 <div class="header__name">
-                    <h1 class="header__shop">Cafetería</h1>
+                    <h1 class="header__shop">FizzBuzz Coffee</h1>
                 </div>
             </section>
         </header>
@@ -37,7 +37,7 @@
 
             <section class="bebidas" id="bebidas">
                 <div class="bebidas__container container">
-                    <h3 class="bebidas__title">Bebidas</h3>
+                    <h2 class="title">Bebidas</h2>
 
                     <div class="bebidas__tipos">
                         <article class="bebidas__card">
@@ -88,14 +88,104 @@
                 </div>
             </section>
 
-            <section class="desayunos container">
-                
+            <section class="desayunos container" id="desayunos">
+                <h2 class="title">Desayunos</h2>
+
+                <div class="desayunos__container">
+                    <article class="desayunos__card">
+                        <img src="assets/chilaquiles.png" alt="Chilaquiles" class="desayunos__img">
+
+                        <hgroup class="desayunos__info">
+                            <h3 class="desayunos__food">Chilaquiles</h3>
+                            <p class="desayunos__price">$90.00 MXN</p>
+                        </hgroup>
+                    </article>
+
+                    <article class="desayunos__card">
+                        <img src="assets/hot-cakes.png" alt="Hot Cakes" class="desayunos__img">
+
+                        <hgroup class="desayunos__info">
+                            <h3 class="desayunos__food">Hot Cakes</h3>
+                            <p class="desayunos__price">$80.00 MXN</p>
+                        </hgroup>
+                    </article>
+
+                    <article class="desayunos__card">
+                        <img src="assets/desayuno-ing.png" alt="Desayuno Inglés" class="desayunos__img">
+
+                        <hgroup class="desayunos__info">
+                            <h3 class="desayunos__food">Desayuno Inglés</h3>
+                            <p class="desayunos__price">$150.00 MXN</p>
+                        </hgroup>
+                    </article>
+                </div>
+            </section>
+
+            <section class="platillos" id="platillos">
+                <div class="platillos__container container">
+                    <h2 class="title">Platillos</h2>
+
+                    <div class="platillos__variedades">
+                        <article class="platillos__card">
+                            <div class="platillos__description">
+                                <hgroup>
+                                    <h3 class="platillos__title">Pizza Nápoles</h3>
+                                    <p class="platillos__text">La pizza napolitana, también conocida como pizza al estilo de Nápoles, es un estilo de pizza hecha con tomates y queso mozzarella.</p>
+                                </hgroup>
+    
+                                <button type="button" class="platillos__btn">Ordenar</button>
+                            </div>
+    
+                            <figure class="platillos__figure">
+                                <img src="assets/pizza-napoles.png" alt="Pizza nápoles" class="platillos__img">
+                            </figure>
+                        </article>
+
+                        <article class="platillos__card">
+                            <div class="platillos__description">
+                                <hgroup>
+                                    <h3 class="platillos__title">Pasta Boloñesa</h3>
+                                    <p class="platillos__text">La lasaña es un plato típico de la cocina italiana elaborado con finas láminas de pasta que son rellenadas con carne, tomate, verduras, cebollas. </p>
+                                </hgroup>
+    
+                                <button type="button" class="platillos__btn">Ordenar</button>
+                            </div>
+    
+                            <figure class="platillos__figure">
+                                <img src="assets/pasta-bolañesa.png" alt="Pasta boloñesa" class="platillos__img">
+                            </figure>
+                        </article>
+
+                        <article class="platillos__card">
+                            <div class="platillos__description">
+                                <hgroup>
+                                    <h3 class="platillos__title">Baguette Sandwich</h3>
+                                    <p class="platillos__text">Sándwich clásico de jamón con abundante mantequilla.</p>
+                                </hgroup>
+    
+                                <button type="button" class="platillos__btn">Ordenar</button>
+                            </div>
+    
+                            <figure class="platillos__figure">
+                                <img src="assets/baguette.png" alt="Baguette Sandwich" class="platillos__img">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="granos container">
+                <h2 class="title">Granos de Café</h2>
+
+                <div class="granos__container">
+                    
+                </div>
             </section>
 
         </main>
 
         <a href="#top" class="togo__link">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-up-filled" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-up-filled" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-4.98 3.66l-.163 .01l-.086 .016l-.142 .045l-.113 .054l-.07 .043l-.095 .071l-.058 .054l-4 4l-.083 .094a1 1 0 0 0 1.497 1.32l2.293 -2.293v5.586l.007 .117a1 1 0 0 0 1.993 -.117v-5.585l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-4 -4l-.082 -.073l-.089 -.064l-.113 -.062l-.081 -.034l-.113 -.034l-.112 -.02l-.098 -.006z" stroke-width="0" fill="#517E78" />
             </svg>

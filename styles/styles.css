@@ -26,6 +26,8 @@
     --height-nav: 77px;
     --padding-top: 50px;
     --padding-bottom: 40px;
+
+    --padding-top-contenedor-productos: 50px;
 }
 
 html {
@@ -44,8 +46,8 @@ html {
 
 .togo__link {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +60,13 @@ html {
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
     overflow: hidden;
+}
+
+.title {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s46);
+    color: var(--color-principal-1);
+    text-align: center;
 }
 
 /* Sección del header */
@@ -141,29 +150,11 @@ html {
     overflow: visible;
 }
 
-.bebidas__title {
-    font-weight: var(--font-w500);
-    font-size: var(--font-s46);
-    color: var(--color-principal-1);
-    text-align: center;
-}
-
 .bebidas__tipos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-    padding-top: 50px;
-}
-
-.bebidas__card {
-    transform: scale(1);
-    transition: all 200ms ease-in 0s;
-}
-
-.bebidas__card:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 6px;
-    transform: scale(1.02);
+    padding-top: var(--padding-top-contenedor-productos);
 }
 
 .bebidas__img {
@@ -172,6 +163,13 @@ html {
     height: 205px;
     object-fit: cover;
     border-radius: 6px;
+    transform: scale(1);
+    transition: all 200ms ease-in 0s;
+}
+
+.bebidas__card:hover > .bebidas__img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: scale(1.03);
 }
 
 .bebidas__info {
@@ -191,4 +189,112 @@ html {
     color: var(--color-price);
 }
 
-/* Aquí continua el proyecto... */
+/* Sección de desayunos */
+
+.desayunos__container {
+    padding-top: var(--padding-top-contenedor-productos);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
+}
+
+.desayunos__card {
+    width: 270px;
+}
+
+.desayunos__img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.desayunos__info {
+    margin-top: 15px;
+}
+
+.desayunos__food {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-principal-3);
+}
+
+.desayunos__price {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-price);
+    margin-top: 1rem;
+}
+
+/* Sección de los platillos */
+
+.platillos {
+    background-color: #FEFDF3;
+}
+
+.platillos__variedades {
+    padding-top: var(--padding-top-contenedor-productos);
+}
+
+.platillos__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+.platillos__description {
+    width: 85%;
+}
+
+.platillos__figure {
+    width: 85%;
+    max-width: 470px;
+}
+
+.platillos__img {
+    display: block;
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.platillos__title {
+    font-weight: var(--font-w400);
+    font-size: var(--font-s32);
+    color: var(--color-principal-3);
+    margin-bottom: 24px;
+}
+
+.platillos__text {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+    color: var(--color-principal-1);
+}
+
+.platillos__btn {
+    margin-top: 24px;
+    width: 200px;
+    height: 44px;
+    background-color: var(--color-secundario-1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+}
+
+.platillos__variedades {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.platillos__card:nth-of-type(2) > .platillos__figure {
+    order: -1;
+}
+
+/* Sección de granos de café */
+
