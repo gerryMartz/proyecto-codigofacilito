@@ -12,6 +12,7 @@
     --color-secundario-4: #F2DCD4;
 
     --color-price: #2C2B2B;
+    --color-placeholder: #929090;
 
     --color-background-bebidas: #F2DCD4;
 
@@ -28,11 +29,13 @@
     --padding-bottom: 40px;
 
     --padding-top-contenedor-productos: 50px;
+
+    --font-family: 'Roboto', sans-serif;
 }
 
 html {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
 }
 
 *,
@@ -322,4 +325,140 @@ html {
     font-weight: var(--font-w500);
     font-size: var(--font-s16);
     color: var(--color-principal-3);
+}
+
+/* Sección de Contacto */
+
+.contacto {
+    background-color: var(--color-background-bebidas);
+}
+
+.container__input {
+    margin-bottom: 15px;
+}
+
+.contacto__form {
+    width: 470px;
+}
+
+.contacto__nombre {
+    width: 100%;
+    height: 44px;
+    padding: 13px 16px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-family);
+}
+
+.contacto__nombre::placeholder,
+.contacto__mensaje::placeholder {
+    font-family: var(--font-family);
+    font-weight: var(--font-w400);
+    font-size: var(--font-s16);
+    color: var(--color-placeholder);
+}
+
+.contacto__mensaje {
+    width: 100%;
+    min-height: 170px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 19px;
+    font-family: var(--font-family);
+}
+
+.contacto__options {
+    padding-top: var(--padding-top-contenedor-productos);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+    justify-items: center;
+}
+
+.contacto__btn {
+    width: 200px;
+    height: 45px;
+    background-color: var(--color-secundario-1);
+    color: white;
+    border-radius: 6px;
+    margin-top: 21px;
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+}
+
+.contacto__dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialogElement {
+    border-radius: 10px;
+    width: 30%;
+    height: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    border: none;
+}
+
+#dialogElement > form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#dialogElement > form > hgroup {
+    flex-grow: 1;
+}
+
+#dialogElement::backdrop {
+    animation: fade 1s ease forwards;
+}
+
+.dialog__title {
+    font-weight: var(--font-w500);
+    font-size: var(--font-s24);
+    color: var(--color-principal-1);
+    text-align: center;
+}
+
+.dialog__paragraph {
+    margin-top: 2rem;
+    font-weight: var(--font-w400);
+    font-size: var(--font-s16);
+    color: var(--color-principal-1);
+    text-align: center;
+}
+
+.dialog__btn {
+    height: 45px;
+    background-color: var(--color-secundario-1);
+    color: white;
+    border-radius: 6px;
+    margin-top: 21px;
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+}
+
+@keyframes fade {
+    
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: rgba(40, 65, 72, 0.7);
+    }
+
 }
