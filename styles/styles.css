@@ -491,3 +491,46 @@ html {
     text-align: right;
     align-self: center;
 }
+
+
+/* Sección de Media Queries */
+
+@media screen and (max-width: 889px) {
+
+    .header__links {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .granos__container {
+        gap: 30px;
+    }
+
+    .platillos__card {
+        gap: 20px;
+    }
+
+    .platillos__card:first-of-type > .platillos__figure,
+    .platillos__card:last-of-type > .platillos__figure {
+        order: -1;
+    }
+
+    .contacto__options {
+        gap: 40px;
+    }
+
+    .contacto__form {
+        order: 1;
+    }
+
+    .footer__container {
+        gap: 30px;
+        padding-bottom: 80px;
+    }
+
+    .footer__texts,
+    .footer__email {
+        text-align: center;
+    }
+    
+}
