@@ -232,6 +232,57 @@ html {
 
 /* Sección de los platillos */
 
+#dialogPlatillos {
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    border: none;
+}
+
+#dialogPlatillos > form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#dialogPlatillos::backdrop {
+    animation: fade 0.5s ease forwards;
+}
+
+#dialogPlatillos > form > hgroup {
+    flex-grow: 1;
+}
+
+#closeOrderBtn {
+    width: 50%;
+    height: 45px;
+    background-color: var(--color-secundario-1);
+    color: white;
+    border-radius: 6px;
+    margin: 21px auto 0;
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-w500);
+    font-size: var(--font-s16);
+}
+
+#orderDescription {
+    margin-top: 2rem;
+}
+
+#orderDescription + h2 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .platillos {
     background-color: #FEFDF3;
 }
