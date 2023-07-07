@@ -589,5 +589,14 @@ html {
     .dialog__title {
         font-size: var(--font-s16);
     }
+
+    .bebidas__tipos {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        place-items: center;
+    }
+
+    .bebidas__card {
+        width: 270px;
+    }
     
 }
